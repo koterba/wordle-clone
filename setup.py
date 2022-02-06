@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'wordle-clone',         
   packages = ['wordle-clone'],   
-  version = '1.1',
+  version = '1.2',
   license='MIT',
   description = 'Simple Wordle clone',
   author = 'Alan Koterba',

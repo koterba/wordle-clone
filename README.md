@@ -1,5 +1,5 @@
-## why are the words not on a separate file?
-ok so i had to make it into an exe 😳
+## why are the words not in a separate file?
+i had to make it into an exe 😳
 
 
 

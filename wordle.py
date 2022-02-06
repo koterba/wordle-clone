@@ -28,29 +28,30 @@ def main():
 		result = []
 		guess = ""
 
-		while len(guess) != 5:
+		while len(guess) != 5: ## make sure guess is 5 letters
 			if len(prevWords) == 0:
-				guess = list(input("Wordle Clone, Type in a 5 letter word below.\n\n> "))
+				guess = list(input("Wordle Clone, Type in a 5 letter word below.\n\n> ")) ## if nothing in prev answers (start of the game) print "title"
 			else:
-				guess = list(input("\n> "))
+				guess = list(input("\n> ")) ## after users inputs answers, there is no title as prev answers is not empty anymore.
 			if len(guess) != 5:
 				clear()
 				print("Not 5 Characters, type in a valid word.\n")
 
-		for num in range(count):
+		for num in range(count): ## appends 5 times to result, as there are 5 letters in both word and guess so it does 5 checks in total, appending green, yellow or normal colours everytime.
 			result.append(f"\033[1;32;1m{guess[num]}\033[0;37;1m" if word[num] == guess[num] else f"\033[1;33;1m{guess[num]}\033[0;37;1m" if guess[num] in word else guess[num]) # if same index, GREEN, if in word, YELLOW, if nothing, NORMAL
 
-		strResult = ''.join(result) ## making result into str, to append easily
+		strResult = ''.join(result) ## making result into str, to append easily/print prev words easily
 		prevWords.append(strResult)
 
 		clear()
 
 		turn += 1
+		
 		for i in prevWords:
 			print(i)
 
 
-	if list(word) == guess:
+	if list(word) == guess: ## "guess" is a list already, word isnt. it was the easiest solution to actually make the game finish.
 		print("\nyou won!")
 		input("\npress ENTER to play again.")
 		main()

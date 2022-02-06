@@ -46,7 +46,7 @@ def main():
 		clear()
 
 		turn += 1
-		
+
 		for i in prevWords:
 			print(i)
 
@@ -60,4 +60,5 @@ def main():
 		input("\npress ENTER to play again.")
 		main()
 
-main()
+if __name__ == "__main__":
+    main()

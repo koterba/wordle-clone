@@ -2,13 +2,13 @@ from distutils.core import setup
 setup(
   name = 'wordle-clone',         
   packages = ['wordle-clone'],   
-  version = '1.0',
+  version = '1.1',
   license='MIT',
   description = 'Simple Wordle clone',
   author = 'Alan Koterba',
   author_email = 'alankoterba12321@gmail.com',
   url = 'https://github.com/alannxq/wordle-clone',
-  download_url = 'https://github.com/user/reponame/archive/v_01.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/alannxq/wordle-clone/archive/refs/tags/v1.1.tar.gz',    # I explain this later on
   keywords = ['Wordle', 'game', 'color'],   # Keywords that define your package best
   install_requires=[],
   classifiers=[
